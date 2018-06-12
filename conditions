@@ -1,0 +1,244 @@
+'''
+#Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included)
+
+for i in range (1500,2701):
+    if( i %7==0) and (i %5==0):
+        print(i)
+'''
+'''
+#c/5 = f-32/9 .(c/5)9 +32,temperature conversion
+
+c=input()
+
+d=int(c[:-1])
+if c[-1].upper()=='C':
+    temp=d/5 *9 +32
+    print(temp)
+elif c[-1].upper()=='F':
+
+    temp1=(d-32/9) *5
+    print(temp1)
+else:
+    print(0)
+
+'''
+
+'''
+#guess a number between 1 to 10
+import random
+
+num=random.randint(1,10)
+n=0
+
+while n!=num:
+    n=int(input())
+    if n>num:
+        print('number is large')
+    elif n<num:
+
+        print('number is too small')
+
+    else:
+        pass
+
+else:
+    print('correct')
+
+
+'''
+
+'''
+#Write a Python program that accepts a word from the user and reverse it.
+
+word=str(input())
+
+for i in range(len(word)-1, -1,-1):
+
+    print(word[i], end="")
+    
+'''
+
+'''
+n=[2,3,4,5,6,7,8]
+count=0
+count2=0
+for i in n:
+    if i%2==0:
+        count=count+1
+    elif i%2 !=0:
+        count2+=1
+        pass
+
+print(count,count2)
+
+
+'''
+
+'''
+datalist = [1452, 11.23, 1+2j, True, 'w3resource', (0, -1), [5, 12], {"class":'V', "section":'A'}]
+
+for i in datalist:
+    print(i,type(i))
+
+'''
+'''
+l=[0,1,2,3,4,5]
+for i in l:
+    if i !=3 and i!=4:
+        
+        print(i,end=" ")
+'''
+#Write a Python program to get the Fibonacci series between 0 to 50
+
+'''
+i,j=0,1
+while j<50:
+    print(j, end=",")
+    i,j=j,i+j
+'''
+'''
+for i in range(0,50):
+    if i%3==0 and i%5==0:
+        print('fizzbuzz')
+
+    elif i%5==0:
+
+        print('buzz')
+    elif i%3==0 :
+        print('fizz')
+
+    else:
+        print(i, end=",")
+
+'''
+'''
+lines=[]
+while True:
+    l=input()
+    if l:
+        lines.append(l.upper())
+    else:
+
+        break;
+
+for l in lines:
+
+    print(l)
+    '''
+'''
+lines=[]
+l=input()
+while True:
+    if l:
+        lines.append(l.upper())
+    else:
+        break;
+for l in lines:
+    print(l)
+'''
+'''
+#Write a Python program that accepts a string and calculate the number of digits and letters
+
+word=input()
+count=0
+for i in word:
+    if i.isdigit():
+        count=count+1
+    else:
+        pass
+
+
+
+print(count)
+
+'''
+'''
+lines=[]
+l=input()
+while True:
+    if l:
+        l=lines.append(l.upper())
+    else:
+        break
+
+    for l in lines:
+        print(l)
+else:
+    pass
+
+'''
+'''
+str1=""
+for row in range(7):
+    for col in range(5):
+        if (((col==0 or col==4) and row!=0) or (row==0 or row==3) and (col>0 and col<4)):
+            str1=str1+"*"
+        else:
+            str1=str1+" "
+    str1=str1 +"\n"
+    pass
+print(str1)
+
+
+'''
+
+##P
+'''
+str1=""
+
+for row in range(7):
+    for col in range(5):
+        if (col==0 or (row==0 or row==3 or row==6) and col>0):
+            str1=str1+"*"
+        else:
+            str1=str1+" "
+    str1=str1+"\n"
+    pass
+print(str1)
+
+
+'''
+'''
+#PPPPPP
+
+str1=""
+for row in range(7):
+    for col in range(6):
+        if ((row==0 or row==3)and(col!=5) or (col==0) or (col==5 and (row==1 or row==2))or (col==2 and row==4) or (col==4 and row==5) or (col==5 and row==6)):
+            str1=str1+"*"
+        else:
+            str1=str1+" "
+
+    str1=str1+"\n"
+print(str1)
+
+'''
+
+'''
+
+l=['a','e','i','o','u']
+
+for i in l:
+    if i==str(input()):
+        print('yo this is a vowel')
+
+
+    else:
+        print("chiki chaka")
+
+        pass
+
+
+print(l.append(input("print anything")))
+print(l)
+'''
+
+
+#functions
+l=[input()]
+def sum():
+    for i in l:
+        add=
+
+
+
