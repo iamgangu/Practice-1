@@ -1,0 +1,31 @@
+
+#read file(from you local system)
+f=open('Z:\\fun.txt','r+')
+for i in range(10):
+
+    f.write("This is line %d\r\n" % (i))
+
+print(f.read())
+
+
+#Given two .txt files that have lists of numbers in them,
+#find the numbers that are overlapping. One .txt file has a list of all prime numbers under 1000, and the other .txt file has a list of happy numbers up to 1000.
+
+def import_list(filename):
+    list_num=[]
+    with open (filename) as f1:
+        line=f1.readline()
+        while line:
+            list_num.append(int(line))
+            line=f1.readline()
+    return list_num
+
+prime=import_list("Z:\\Pytest\\primeNumbers.txt")
+happi=import_list("Z:\Pytest\happiNumbers.txt")
+
+list_out=[]
+for i in prime:
+    for i in happi:
+        list_out.append(i)
+
+print(list_out)
