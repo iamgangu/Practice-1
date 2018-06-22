@@ -1,0 +1,27 @@
+#Welcome to hangman
+import random
+with open ('Z:\Pytest\word.txt','r+') as tf: ##file with dictionary of words in it
+    b=list(tf)
+    word=list(random.choice(b))
+
+
+lguess=list('*'*len(word))
+count=0
+dum=[]
+while count<len(word):
+    cond=str(input('enter the letter'))
+
+    for i in range(0,len(word)):
+        if cond==word[i]:
+            lguess[i]=cond
+
+            count+=1
+    if cond not in word:
+        print("".join(lguess))
+        count+=1
+        continue
+
+    if '*' not in lguess:
+        print("".join(lguess)+' you won and it took '+str(count)+' guesses')
+else:
+    print('died ', "".join(word))
